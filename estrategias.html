@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moonshine</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" type="image/icon" href="./img/favicon.ico"/>
+</head>
+<body>
+    <header>
+        <a href="#" class=""></a>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="estrategias.html" class="active">Estrategia</a></li>
+            <li><a href="proyecto.html">Healthy Clock</a></li>
+            <li><a href="contactos.html">Contactos</a></li>
+
+        </ul>
+    </header>
+    <section>
+        <img src="img/stars.png" id="stars">
+        <img src="img/moon.png" id="moon">
+        <h2 id="text">Moonshine</h2>
+    </section>
+    <div class="home">
+
+        <center>
+            <div class="card-container">
+        <div class="card">
+            <div class="face front">
+                <img src="/img/mision.jpg" alt="">
+                <h3>Misión</h3>
+            </div>
+            <div class="face back">
+                <h3>Misión</h3>
+                <p>En Moonshine, nos enfocamos en crear soluciones tecnológicas innovadoras para el sector de la salud, especialmente dirigidas a la población adulta mayor. Nuestro objetivo es mejorar su calidad de vida mediante productos que ofrecen mediciones en tiempo real para detectar tempranamente cambios en la temperatura corporal, el ritmo cardíaco y los niveles de oxígeno, proporcionando soluciones personalizadas y efectivas.</p>
+                
+            </div>
+        </div>
+    
+        
+        <div class="card">
+            <div class="face front">
+                <img src="/img/vision.jpg" alt="">
+                <h3>Visión</h3>
+            </div>
+            <div class="face back">
+                <h3>Visión</h3>
+                <p>Para 2032, Moonshine aspira a ser líder. Visualizamos un futuro donde nuestro producto monitoree métricas vitales de los adultos mayores y se conecten a una aplicación móvil, permitiendo a los familiares recibir actualizaciones en tiempo real sobre la salud de sus seres queridos. Queremos que nuestros productos sean tanto herramientas médicas como una fuente de tranquilidad y conexión para las familias.</p>
+                
+            </div>
+        </div>
+    </div>
+
+    <br><br><br><br><br><br><br><br><br><br>    
+    <h2>Objetivo General</h2>
+    <p>
+        Desarrollar  soluciones tecnológicas e innovadoras en el sector de la salud, con un enfoque especial en la población adulta mayor, mejorar la calidad de vida a través de productos que proporcionan mediciones en tiempo real, lo que permite identificar cambios anormales en la temperatura corporal, el ritmo cardíaco y los niveles de oxígeno. Esto puede ayudar a detectar problemas médicos antes de que se agraven. con el objetivo de brindar soluciones personalizadas y efectivas para la población adulta mayor.</p>
+
+        <br><br><br>
+        <h2>Objetivos Especificos</h2><br>
+        <div class="container-cards">
+            <div class="cards">
+                <figure>
+                    <img src="/img/Obj.1.jpg">
+                </figure>
+                <div class="contenido-cards">
+                    <p>Proporcionar soluciones tecnológicas innovadoras para la población adulta mayor.</p>
+                </div>
+            </div>
+            <div class="cards">
+                <figure>
+                    <img src="/img/Ob.2.jpg">
+                </figure>
+                <div class="contenido-cards">
+                    <p>Invertir en investigación para mejorar constantemente la tecnología y la precisión de los sensores.</p>
+                </div>
+            </div>
+            <div class="cards">
+                <figure>
+                    <img src="/img/Ob.3.jpg">
+                </figure>
+                <div class="contenido-cards">
+                    <p>Diseñar  productos especialmente adaptados a las necesidades y capacidades de los adultos mayores.</p>
+                </div>
+            </div>
+            <div class="cards">
+                <figure>
+                    <img src="/img/Ob.4.jpg">
+                </figure>
+                <div class="contenido-cards">
+                    <p>Sobresalir en la innovación tecnológica a través de nuestro reloj digital para mejorar la calidad de vida de los adultos mayores.</p>
+                </div>
+            </div>
+            </div>
+    </center>
+
+    </div>
+
+    <script>
+        let stars = document.getElementById('stars');
+        let moon = document.getElementById('moon');
+        let text = document.getElementById('text');
+        let header = document.querySelector('header');
+        window.addEventListener('scroll',function(){
+            let value = window.scrollY;
+            stars.style.left = value * 0.25 + 'px';
+            moon.style.top = value * 1.05 + 'px';
+            text.style.marginRight = value * 4 + 'px';
+            text.style.marginTop = value * 1.5 + 'px';
+            header.style.top = value * 0.5 + 'px';
+        })
+    </script>
+        <script src="script.js"></script>
+    
+</body>
+</html>

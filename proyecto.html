@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moonshine</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" type="image/icon" href="./img/favicon.ico"/>
+</head>
+<body>
+    <header>
+        <a href="#" class=""></a>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="estrategias.html">Estrategia</a></li>
+            <li><a href="proyecto.html" class="active">Healthy Clock</a></li>
+            <li><a href="contactos.html">Contactos</a></li>
+        </ul>
+    </header>
+    <section>
+        <img src="img/stars.png" id="stars">
+        <img src="img/moon.png" id="moon">
+        <h2 id="text">Moonshine</h2>
+    </section>
+    <div class="home">
+        <h2>Problematica</h2><br><br>
+        <p>La alta incidencia de enfermedades crónicas entre los adultos mayores en Colombia es una realidad preocupante que requiere una respuesta urgente y coordinada. Los datos alarmantes, como el 85% de casos de Alzheimer, el 89.5% de problemas cardíacos y el 60% de depresión, subrayan la necesidad de abordar múltiples desafíos interrelacionados.<br><br><br></p>
+
+        <div class="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/Diagrama de Flujo.png" width="500px" alt="Imagen 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/Diagrama de Ishikawa.jpg" width="500px">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/Diagrama de Uso.jpg" width="500px">
+                </div>
+            </div>
+        </div>
+            
+        <br><br><h2>solución</h2><br><br>
+            <p>creación de un reloj digital para adultos mayores. Este dispositivo tiene como objetivo brindar un apoyo fundamental a esta población, contribuyendo a mejorar su seguridad, autonomía y bienestar general. <br>
+                <br> ⭑ Monitorización de la Oxigenación Sanguínea.<br>
+                <br> ⭑ Detección de Anomalías en la Frecuencia Cardíaca.<br>
+                <br> ⭑ Medición de la Temperatura Corporal.<br>
+                <br> ⭑ Diseño Seguro y Amigable.
+                <br><br></p>
+
+                <br><h2>Manual</h2><br><br>
+                <p>Para descargar el manual de usuario, simplemente haz clic en el enlace a continuación. Asegúrate de tener un lector de PDF instalado en tu dispositivo para poder visualizar el documento correctamente. <a download="Manual2" href="/img/ManualPrototipo.pdf" style="text-decoration: none; color: #F3CFDB ;">Descargar manual</a>.
+                </p>
+                <br><br><br>
+
+                <h2>Prototipo</h2><br><br>
+                <center><br><br>
+                    
+                    <div class="hexagon-gallery">
+                        <div class="hexagon">
+                            <div class="hex">
+                                <img src="img/PR.1.jpg" alt="">
+                            </div>
+                            <div class="hex">
+                                <img src="img/PR.2.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="hexagon">
+                            <div class="hex">
+                                <img src="img/PR.3.jpg" alt="">
+                            </div>
+                            <div class="hex">
+                                <img src="img/PR.4.jpg" alt="">
+                            </div>
+                            <div class="hex">
+                                <img src="img/PR.5.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="hexagon">
+                            <div class="hex">
+                                <img src="img/PR.6.jpg" alt="">
+                            </div>
+                            <div class="hex">
+                                <img src="img/PRV.gif" alt="">
+                            </div>
+                        </div>
+                    </div>  
+                </center><br><br>
+
+                </center>
+                
+                <h2>Arduino</h2><br><br>
+                <p>Arduino es una plataforma de hardware libre que permite crear proyectos interactivos, especialmente en salud y bienestar, con capacidad para monitorear temperatura corporal, frecuencia cardíaca y saturación de oxígeno.</p><br><br>
+            <center>
+            <div class="hexagon-gallery">
+                <div class="hexagon">
+                    <div class="hex">
+                        <img src="img/PA.G.jpg" alt="">
+                    </div>
+                    <div class="hex">
+                        <img src="img/PA.P.E.jpg" alt="">
+                    </div>
+                </div>
+                <div class="hexagon">
+                    <div class="hex">
+                        <img src="img/PA.T.jpg" alt="">
+                    </div>
+                    <div class="hex">
+                        <img src="img/PA.W.jpg" alt="">
+                    </div>
+                    <div class="hex">
+                        <img src="img/PA.jpg" alt="">
+                    </div>
+                </div>
+                <div class="hexagon">
+                    <div class="hex">
+                        <img src="img/P.R1.jpg" alt="">
+                    </div>
+                    <div class="hex">
+                        <img src="img/P.R2.jpg" alt="">
+                    </div>
+                </div>
+            </div>  
+        </center>
+
+        <br><br><h2>Testimonio</h2><br><br>
+        <center>
+        <iframe width="631px" height="600px" src="/img/healthyclock.mp4"></iframe>
+    </center>
+    </div>
+    <script>
+        let stars = document.getElementById('stars');
+        let moon = document.getElementById('moon');
+        let text = document.getElementById('text');
+        let header = document.querySelector('header');
+        window.addEventListener('scroll',function(){
+            let value = window.scrollY;
+            stars.style.left = value * 0.25 + 'px';
+            moon.style.top = value * 1.05 + 'px';
+            text.style.marginRight = value * 4 + 'px';
+            text.style.marginTop = value * 1.5 + 'px';
+            header.style.top = value * 0.5 + 'px';
+        })
+    </script>
+        <script src="script.js"></script>
+    
+</body>
+</html>
